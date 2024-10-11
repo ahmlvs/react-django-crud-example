@@ -59,7 +59,7 @@ python3 manage.py startapp api
 
 we will create simple api for users creation, update and delete.
 
-1. define User in api/models
+1. define Book in api/models
 
 2. create db from our models
 ```
