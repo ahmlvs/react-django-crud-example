@@ -79,3 +79,28 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+------
+
+add CORS in django project
+
+1. install library
+```
+cd server
+pip install django-cors-headers
+```
+
+2. add corsheaders in INSTALLED_APPS in setting.py
+```
+"corsheaders",
+```
+
+3. add "corsheaders.middleware.CorsMiddleware", in MIDDLEWARE in setting.py
+```
+"corsheaders.middleware.CorsMiddleware",
+```
+
+4. add CORS_ALLOW_ALL_ORIGINS in setting.py
+```
+CORS_ALLOW_ALL_ORIGINS = True
+```
